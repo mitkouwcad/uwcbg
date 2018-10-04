@@ -1,0 +1,19 @@
+<div class ="ui container">
+  <div class="ui segment">
+    <h4 class="ui">
+      Моля въведете имейла си, за да може да свалите формуляра за кандидатстване. Така ще можем да поддържаме връзка с вас.
+    </h4>
+    <%= form_for @new_user, url: { action: "register" }, html: {class: 'ui form'} do |f| %>
+      <div class="field">
+        <label>Имейл</label>
+        <%= f.text_field :email, placeholder: "example@domain.com" %>
+        <div class="ui error message"></div>
+        <p>
+          <br />
+          <%= f.submit 'Прати имейл', class: "ui button" %>
+          След като въведете имейла си ще ви пратим линк за потвърждение на валидността.
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>

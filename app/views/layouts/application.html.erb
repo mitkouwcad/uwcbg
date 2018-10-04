@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UWC National Committe of Bulgaria - Български Национален Комитет на КОС</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="ui container">
+  <div class="ui center aligned segment">
+    <span class="main_title">
+      &nbsp;&nbsp;&nbsp;
+      BULGARIAN UWC
+    </span>
+    <img src="/images/main_logo.jpg" />
+    <span class="main_title">
+      NATIONAL COMMITTEE
+    </span>
+  </div>
+  <div class="ui divider"></div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
