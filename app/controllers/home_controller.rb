@@ -51,7 +51,7 @@ class HomeController < ApplicationController
     if session[:user_id].present? 
       @user = User.where(id: session[:user_id])
       if @user.exists?
-        filename = 'UWC_Bulgaria_Application_Form_English_2019.doc'
+        filename = 'UWC_Bulgaria_Application_Form_English_2020.doc'
         file = File.read(File.join(Rails.root,'private',filename))
         send_data file, filename: filename
       else
