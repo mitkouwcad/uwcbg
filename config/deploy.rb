@@ -10,10 +10,6 @@ set :repo_url, 'git@github.com:mitkouwcad/uwcbg.git'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/rails/uwc-work"
 
-# restart app by running: touch tmp/restart.txt
-# at server machine
-set :passenger_restart_with_touch, true
-
 set :puma_threads,    [4, 16]
 
 set :rbenv_type, :user
@@ -33,7 +29,7 @@ set :rbenv_ruby, '2.3.0'
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/unicorn.rb'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'

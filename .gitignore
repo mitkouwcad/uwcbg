@@ -1,3 +1,5 @@
 .bundle
 log/*.log
 snips/
+config/database.yml
+config/secrets.yml
