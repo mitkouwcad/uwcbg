@@ -40,4 +40,8 @@ group :development do
   gem 'mysql2', '~>0.5.3'
 
   gem 'thin'
+
+  gem 'capistrano', '~> 3.6.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-unicorn-nginx', '~> 4.1.0'
 end
