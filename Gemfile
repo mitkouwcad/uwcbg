@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production, :staging do
   # Use postgresql as the database for Active Record
-  gem 'pg', '~> 0.15'
+  gem 'pg', '0.15'
   gem 'unicorn'
 end
 
