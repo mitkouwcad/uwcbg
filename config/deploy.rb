@@ -10,6 +10,12 @@ set :repo_url, 'git@github.com:mitkouwcad/uwcbg.git'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/rails/uwc-work"
 
+# restart app by running: touch tmp/restart.txt
+# at server machine
+set :passenger_restart_with_touch, true
+
+set :puma_threads,    [4, 16]
+
 # Default value for :scm is :git
 # set :scm, :git
 
