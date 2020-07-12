@@ -24,7 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :production do
+group :production, :staging do
   # Use postgresql as the database for Active Record
   gem 'pg'
   gem 'unicorn'

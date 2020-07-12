@@ -43,10 +43,7 @@ set :branch, "staging"
 #
 # Global options
 # --------------
-set :ssh_options, {
-  keys: %w(/Users/mitko/.ssh/mitko_uwc),
-  forward_agent: false,
-}
+
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
