@@ -16,6 +16,9 @@ set :passenger_restart_with_touch, true
 
 set :puma_threads,    [4, 16]
 
+set :rbenv_type, :user
+set :rbenv_ruby, '2.3.0'
+
 # Default value for :scm is :git
 # set :scm, :git
 
@@ -30,7 +33,7 @@ set :puma_threads,    [4, 16]
 # set :pty, true
 
 # Default value for :linked_files is []
-# append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
